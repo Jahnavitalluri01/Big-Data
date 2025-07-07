@@ -1,0 +1,519 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNT/Ld7OuyciH1Agra5GDRL",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Jahnavitalluri01/Big-Data/blob/main/Bigdata_Ass1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "id": "ks2wBlb817WK",
+        "outputId": "f6c1f688-4e9d-424f-ba6f-7b63aac0f8b7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the input string:python\n",
+            "nhty\n"
+          ]
+        }
+      ],
+      "source": [
+        "list1 = list(input(\"Enter the input string:\"))\n",
+        "list1.remove('p')\n",
+        "list1.remove('o')\n",
+        "list1.reverse()\n",
+        "result = ''.join(list1)\n",
+        "print(result)\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x1=int(input(\"Enter First Number:\"))\n",
+        "x2=int(input(\"Enter second Number:\"))\n",
+        "add=x1+x2\n",
+        "sub=x1-x2\n",
+        "mul=x1*x2\n",
+        "div=x1/x2\n",
+        "print(\"Addition of x1 and x2:\",add)\n",
+        "print(\"Subtraction of x1 and x2:\",sub)\n",
+        "print(\"Multiplication of x1 and x2:\",mul)\n",
+        "print(\"Deletion of x1 and x2:\",div)\n"
+      ],
+      "metadata": {
+        "id": "H2JMEVRP4C4F",
+        "outputId": "2d56bd8c-fc0c-434e-8ff6-2ef20fc4bb56",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter First Number:10\n",
+            "Enter second Number:5\n",
+            "Addition of x1 and x2: 15\n",
+            "Subtraction of x1 and x2: 5\n",
+            "Multiplication of x1 and x2: 50\n",
+            "Deletion of x1 and x2: 2.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sentence1 = input(\"Enter any sentence: \")\n",
+        "\n",
+        "modifiedsentence1 = sentence1.replace(\"python\", \"pythons\")\n",
+        "\n",
+        "\n",
+        "print(modifiedsentence1)"
+      ],
+      "metadata": {
+        "id": "NDMocLx55DgI",
+        "outputId": "0175c59c-f08c-4230-93a3-bf6d49ba0958",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter any sentence: I am in python Class\n",
+            "I am in pythons Class\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "score = int(input(\"Enter your score: \"))\n",
+        "\n",
+        "if score >= 90:\n",
+        "    print(\"Your Grade is: A\")\n",
+        "elif score >= 80:\n",
+        "    print(\"Your Grade is: B\")\n",
+        "elif score >= 70:\n",
+        "    print(\"Your Grade is: C\")\n",
+        "elif score >= 60:\n",
+        "    print(\"Your Grade is: D\")\n",
+        "else:\n",
+        "    print(\"Your Grade is: F\")"
+      ],
+      "metadata": {
+        "id": "Pu7r_ul85ib4",
+        "outputId": "ad402de4-2f98-416c-e2ce-ede7afbb25f4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your score: 71\n",
+            "Your Grade is: C\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list2 = [23, 'Python', 23.98]\n",
+        "print(list2)\n",
+        "typesoflistitems = [type(i) for i in list2]\n",
+        "print(typesoflistitems)\n"
+      ],
+      "metadata": {
+        "id": "5CigKyKu5-0W",
+        "outputId": "94dfd478-ef3e-4737-e9a4-5c7e6c77ef0a",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[23, 'Python', 23.98]\n",
+            "[<class 'int'>, <class 'str'>, <class 'float'>]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "IT_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}\n",
+        "A = {19, 22, 24, 20, 25, 26}\n",
+        "B = {19, 22, 20, 25, 26, 24, 28, 27}\n",
+        "age = [22, 19, 24, 25, 26, 24, 25, 24]\n"
+      ],
+      "metadata": {
+        "id": "gpS3-hoa6uBg"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Length of IT_companies:\", len(IT_companies))"
+      ],
+      "metadata": {
+        "id": "Vp2xyQXQ63La",
+        "outputId": "90fba5fd-8238-48ce-ea0f-6540fe8fcd76",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Length of IT_companies: 7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "IT_companies.add('Twitter')\n",
+        "print(\"After adding Twitter to set:\", IT_companies)"
+      ],
+      "metadata": {
+        "id": "BjkJsSxR69fg",
+        "outputId": "9e60c647-63c9-4d60-8f5b-1ca4e2f53875",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "After adding Twitter to list: {'Amazon', 'Microsoft', 'IBM', 'Apple', 'Facebook', 'Twitter', 'Google', 'Oracle'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "IT_companies.update(['Tesla', 'Adobe', 'Intel'])\n",
+        "print(\"After adding multiple companies to set:\", IT_companies)"
+      ],
+      "metadata": {
+        "id": "6fyiTIj87J2p",
+        "outputId": "60a42f72-7d75-4e8d-c184-00a1a5cb5c94",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "After adding multiple companies to set: {'Microsoft', 'Apple', 'Tesla', 'IBM', 'Adobe', 'Google', 'Oracle', 'Amazon', 'Intel', 'Facebook', 'Twitter'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "IT_companies.remove('IBM')\n",
+        "print(\"After removing IBM from set:\", IT_companies)"
+      ],
+      "metadata": {
+        "id": "sxACfkOE7SZL",
+        "outputId": "babe09ab-56cc-4b39-be18-e99b99d39a61",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "After removing IBM from set: {'Microsoft', 'Apple', 'Tesla', 'Adobe', 'Google', 'Oracle', 'Amazon', 'Intel', 'Facebook', 'Twitter'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "IT_companies.discard('Sony')\n"
+      ],
+      "metadata": {
+        "id": "gN8Tb_0a7gLE"
+      },
+      "execution_count": 17,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "IT_companies.remove('Sony')\n",
+        "# Discard will ignore if the element doesn't Exist but remove will raise Key Error"
+      ],
+      "metadata": {
+        "id": "yHWybw3t7vER",
+        "outputId": "4eb29cf8-a4bb-45b3-a87e-c1996ee1dbbf",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 158
+        }
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyError",
+          "evalue": "'Sony'",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-27-3184089834.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mIT_companies\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mremove\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'Sony'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0;31m# Discard will ignore if the element doesn't Exist but remove will raise Key Error\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyError\u001b[0m: 'Sony'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "joinedset = A.union(B)\n",
+        "print(\"Join of A and B:\", joinedset)"
+      ],
+      "metadata": {
+        "id": "06Y3S__8705U",
+        "outputId": "8ffe1429-f011-493e-cad5-8ba69e88d60e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Join of A and B: {19, 20, 22, 24, 25, 26, 27, 28}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "intersection = A.intersection(B)\n",
+        "print(\"Intersection of A and B:\", intersection)"
+      ],
+      "metadata": {
+        "id": "A5wY1NkD7_ST",
+        "outputId": "0632ff3a-282f-437f-8b50-1be45e33adb9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Intersection of A and B: {19, 20, 22, 24, 25, 26}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Is A subset of B:\", A.issubset(B))"
+      ],
+      "metadata": {
+        "id": "rbnCNBrM8DD_",
+        "outputId": "6cf5da38-dee3-45b6-b7ea-582440aa77dc",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Is A subset of B: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Are A and B disjoint:\", A.isdisjoint(B))"
+      ],
+      "metadata": {
+        "id": "26aVmft-8HAZ",
+        "outputId": "dd740711-9146-4bd3-fb2a-513160c5b7a9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Are A and B disjoint: False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"A union B:\", A.union(B))\n",
+        "print(\"B union A:\", B.union(A))"
+      ],
+      "metadata": {
+        "id": "sGpDZ5vY8P8d",
+        "outputId": "d5c204c4-56de-4aea-c5fe-8b41502e1524",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A union B: {19, 20, 22, 24, 25, 26, 27, 28}\n",
+            "B union A: {19, 20, 22, 24, 25, 26, 27, 28}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sym_diff = A.symmetric_difference(B)\n",
+        "print(\"Symmetric difference between A and B:\", sym_diff)"
+      ],
+      "metadata": {
+        "id": "ZktBD75f8T8P",
+        "outputId": "b90691bc-433e-4f12-a471-0062b98d8967",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Symmetric difference between A and B: {27, 28}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "del A\n",
+        "del B"
+      ],
+      "metadata": {
+        "id": "RtOzBjif8YXU"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age_set = set(age)\n",
+        "print(\"Length of age list:\", len(age))\n",
+        "print(\"Length of age set:\", len(age_set))"
+      ],
+      "metadata": {
+        "id": "TbWEwjBU8d1g",
+        "outputId": "a62a80c6-f3b9-416a-a743-b647e4e4a762",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Length of age list: 8\n",
+            "Length of age set: 5\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
